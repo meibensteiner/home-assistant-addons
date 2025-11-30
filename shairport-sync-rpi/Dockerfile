@@ -1,5 +1,7 @@
 FROM alpine:edge
 
+COPY run.sh /run.sh
+
 RUN apk -U add \
         git \
         build-base \
@@ -56,9 +58,8 @@ RUN apk -U add \
         /etc/ssl \
         /var/cache/apk/* \
         /lib/apk/db/* \
-        /root/shairport-sync
-
-COPY run.sh /run.sh
+        /root/shairport-sync \
+ && chmod +x /run.sh
 
 ENV airplay_name homeassistant
 
