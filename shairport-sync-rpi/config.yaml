@@ -16,7 +16,7 @@ version: latest
 
 startup: application
 host_network: true
-host_pid: true
+#host_pid: true
 init: false
 
 devices:
