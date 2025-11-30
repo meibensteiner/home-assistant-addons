@@ -17,7 +17,7 @@ version: latest
 startup: application
 host_network: true
 host_pid: true
-#init: false
+init: false
 
 devices:
   - /dev/snd
