@@ -1,7 +1,7 @@
 name: "Shareport Sync on Home Assistant OS"
 description: >
   Start Shareport Sync on Home Assistant OS utilizing a local audio device
-version: "1.0.0"
+version: "1.0.1"
 slug: "shairport-sync-rpi"
 
 arch:
