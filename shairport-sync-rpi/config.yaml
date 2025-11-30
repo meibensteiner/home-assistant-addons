@@ -23,10 +23,10 @@ devices:
   - /dev/snd
 
 privileged:
-  - SYS_NICE
+  - SYS_ADMIN
 
-#security_opt:
-#  - apparmor:unconfined
+security_opt:
+  - apparmor:unconfined
 
 #options:
 #  start_url: "http://localhost:8123"
