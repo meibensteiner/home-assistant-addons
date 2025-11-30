@@ -1,7 +1,7 @@
-name: "Shareport Sync on Home Assistant OS"
+name: "Shairport Sync on Home Assistant OS"
 description: >
-  Start Shareport Sync on Home Assistant OS utilizing a local audio device
-version: "1.0.1"
+  Start Shairport Sync on Home Assistant OS utilizing a local audio device
+version: "1.0.0"
 slug: "shairport-sync-rpi"
 
 arch:
@@ -11,35 +11,14 @@ arch:
   - amd64
   - i386
 
-image: mikebrady/shairport-sync
-version: latest
-
 startup: application
 host_network: true
-#host_pid: true
-init: false
 
 devices:
   - /dev/snd
 
-privileged:
-  - SYS_ADMIN
+options:
+  airplay_name: "homeassistant"
 
-security_opt:
-  - apparmor:unconfined
-
-#options:
-#  start_url: "http://localhost:8123"
-#  login_delay: 2
-#  hdmi_port: 0
-#  screen_timeout: 0
-#  browser_refresh: 600
-
-#schema:
-#  ha_username: str
-#  ha_password: password
-#  start_url: str
-#  login_delay: int(0,)
-#  hdmi_port: int(0,1)
-#  screen_timeout: int(0,)
-#  browser_refresh: int(0,)
+schema:
+  airplay_name: str
