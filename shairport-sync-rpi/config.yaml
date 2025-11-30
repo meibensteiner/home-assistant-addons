@@ -5,10 +5,10 @@ version: "1.0.0"
 slug: "shairport-sync-rpi"
 
 arch:
+  - armhf
+  - armv7
   - aarch64
   - amd64
-  - armv7
-  - armv6
   - i386
 
 image: mikebrady/shairport-sync
